@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.pan.mobileplayer.activity.view.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#ff3097ff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/yingyin" />
+
+    <TextView
+        android:id="@+id/tv_title__sousuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/tv_background_sousuo"
+        android:clickable="true"
+        android:drawableLeft="@drawable/tv_drawable_sousuo"
+        android:drawablePadding="3dp"
+        android:text="全局搜索"
+        android:textColor="@drawable/tv_color_sousuo"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/ic_topbanner_game" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/game_dot"
+            android:layout_alignRight="@+id/tv_game"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_topbanner_record"/>
+
+</com.example.pan.mobileplayer.activity.view.TitleBar>
