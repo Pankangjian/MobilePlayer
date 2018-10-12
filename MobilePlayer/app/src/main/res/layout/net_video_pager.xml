@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.example.pan.mobileplayer.activity.view.XListView
+        android:divider="@null"
+        android:id="@+id/lv_netvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/iv_net_no"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_net_video"
+        android:layout_width="185dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:background="@drawable/network_disconnected"/>
+    <TextView
+        android:id="@+id/tv_net_video"
+        android:text="没有连接网络..."
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
